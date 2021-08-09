@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dead by Daylight - Wallpaper</title>
+
+    <link rel="stylesheet" href="assets/css/normalize.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/createjs.min.js"></script>
+
+    <script src="assets/js/audio.js"></script>
+
+    <script>
+        window.wallpaperPropertyListener = {
+            applyUserProperties: function (properties) {
+                var creditsElement = document.querySelector("#credits");
+
+                if (properties.credits) {
+                    var creditsCheckbox = properties.credits.value;
+                    creditsElement.hidden = creditsCheckbox;
+                }
+
+            }
+        };
+    </script>
+
+</head>
+
+<body>
+
+    <div id="container">
+        <img src="./assets/images/wallpapers/6.png">
+        <img src="./assets/images/wallpapers/5.png">
+        <img src="./assets/images/wallpapers/4.png">
+        <img src="./assets/images/wallpapers/3.png">
+        <img src="./assets/images/wallpapers/2.png">
+        <img src="./assets/images/wallpapers/1.png">
+    </div>
+
+    <div id="large-header" class="large-header">
+        <canvas id="canvas"></canvas>
+        <canvas id="demo-canvas"></canvas>
+
+        <script src="assets/js/Pack.min.js"></script>
+        <script src="assets/js/node.js"></script>
+        <script src="assets/js/Lite.min.js"></script>
+        <script src="assets/js/index.js"></script>
+    </div>
+
+    <div id="credits">
+        <p>Created by <span style="color:aqua;">Medronic</span></p>
+    </div>
+
+</body>
+
+</html>
